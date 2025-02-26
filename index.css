@@ -1,0 +1,662 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fafbfc;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    height: 80px;
+    font-size: 14px;
+}   
+
+.logo{
+    color: white;
+    font-size: 30px;
+}
+
+span{
+    border-bottom: 5px solid #fb3fb3;
+}
+
+.nav{
+    display: flex;
+    height: 80px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    padding: 10px;
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.cta-nav{
+    height: 50px;
+    background-color: #b12a7d;
+    border: none;
+    color: white;
+    font-size: 14px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.cta{
+    background-color: #b12a7d;
+    border: none;
+    color: white;
+    padding: 20px;
+    width: 180px;
+    font-size: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.cta-2{
+    background-color: white;
+    border: none;
+    color: #b12a7d;
+    padding: 20px;
+    width: 180px;
+    font-size: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+header{
+    background-image:linear-gradient(to bottom, rgba(20,20,24,0.52),rgba(68,58,65,0.73)),url(./63d1ad60f65e760d0f6dec7c_boxed-water-is-better-y-TpYAlcBYM-unsplash.jpg);
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero{
+    text-align: center;
+    color: white;
+    width: 90%;
+    padding-top: 100px;
+}
+
+h1{
+    font-size: 35px;
+}
+
+h3{
+    font-weight: 400;
+}
+
+/* SECTION HEADER MOBILE ET TABLETTE*/
+
+    @media only screen and (max-width : 900px){
+    
+        header{
+            height: auto;
+            padding-bottom: 100px;
+            background-position: center;
+
+        }
+
+        nav{
+            justify-content: space-between;
+        }
+
+        .nav{
+            align-items: center;
+            font-size: 12px;
+        }
+        
+        .cta-na{
+            font-size: 12px;
+            margin-left: 20px;
+        }
+        
+        h1{
+            font-size: 25px;
+        }
+
+        h3{
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+    }
+
+@media only screen and (max-width : 550px){
+    
+
+    .nav{
+    display: none;
+    }
+
+    h1{
+        font-size: 35px;
+    }
+
+    h3{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .cta{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .cta-2{
+        width: 90%;
+    }
+}
+
+/* SECTION FEATURES */
+
+.features{
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 100%;
+}
+
+.services{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    margin: auto;
+    font-weight: 500;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    background-color: #b12a7d;
+    border-radius: 100%;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.icon-img{
+    width: 40px;
+    height: 40px;
+}
+
+/* SECTION FEATURES TABLETTE ET MOBILE */
+
+@media only screen and (max-width : 900px){
+
+    .features{
+        flex-wrap: wrap;
+    }
+
+    .icon{
+        width: 70px;
+        height: 60px;
+    }
+    
+    .icon-img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .texte-service{
+        font-size: 18px;
+    }
+
+    .services{
+        padding: 10px;
+        margin: 0;
+    }
+}
+    
+@media only screen and (max-width : 550px){
+
+    .features{
+        flex-wrap: wrap;
+    }
+
+    .icon{
+        width: 70px;
+        height: 60px;
+    }
+    
+    .icon-img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .texte-service{
+        font-size: 18px;
+    }
+
+    .services{
+        width: 100%;
+    }
+}
+
+/* SECTION A PROPOS ORDINATEUR */
+
+.About-us{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    max-width: 800px;
+    box-shadow: 5px 5px 45px 5px rgba(0, 0, 0, 0.19);
+}
+
+.ima-about{
+    width: 50%;
+    height: 500px;
+    background-size: contain;
+}
+
+.text-about-us{
+    margin: 20px;
+    font-weight: 300px;
+}
+
+.cta-about-us{
+    background-color: #b12a7d;
+    padding: 20px;
+    color: #ffff;
+    border: none;
+}
+
+/* SECTION A PROPOS DE TABLETTE ET MOBILE */
+
+@media only screen and (max-width : 900px){
+
+    .About-us{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 80%;
+}
+
+.ima-about{
+    width: 100%;
+}
+
+.cta-about-us{
+    width: 90%;
+}
+
+}
+
+
+@media only screen and (max-width : 550px){
+
+    .About-us{
+        display: flex;
+        flex-direction: column-reverse;
+}
+
+.ima-about{
+    width: 100%;
+}
+
+.cta-about-us{
+    width: 90%;
+}
+}
+
+/* SECTION TEMOIGNAGES ORDINATEUR */
+
+.temoignages{
+    background-color: #fafbfc;
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+
+.title-temoignage > h3{
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 100px;
+}
+
+.title-temoignage > p{
+font-size: 20px;
+}
+
+.title-temoignage{
+    text-align: center;
+}
+
+.temoignage-container{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+.profil{
+padding: 10px;
+margin: 10px;
+text-align: center;
+background-color: white;
+border-radius: 4px;
+margin-top: 60px;
+width: 100%;
+}
+
+.profil-review{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+/* SECTION A PROPOS DE TABLETTE ET MOBILE */
+
+@media only screen and (max-width : 900px){
+
+    .temoignage-container{
+    flex-direction: column;
+    }
+}
+
+.profil{
+width: 90%;
+}
+
+/* SECTION AVANTAGE ORDINATEUR */
+
+.avantages{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    margin-bottom: 150px;
+    flex-wrap: wrap;
+}
+
+.avantage-titre{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.avantage-icon{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+
+.text-avantage{
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.icon-svg-1{
+    width: 5Opx;
+    height: 50px;
+    padding: 20px;
+    background-color: #f64969b1;
+    margin-top: 20px;
+}
+
+.icon-svg-2{
+    width: 5Opx;
+    height: 50px;
+    padding: 20px;
+    background-color: #f345f339;
+    margin-top: 20px;
+}
+
+.icon-svg-3{
+    width: 5Opx;
+    height: 50px;
+    padding: 20px;
+    background-color: #e8f64990;
+    margin-top: 20px;
+}
+
+.icon-svg-4{
+    width: 5Opx;
+    height: 50px;
+    padding: 20px;
+    background-color: #91f64998;
+    margin-top: 20px;
+}
+
+/* SECTION AVANTAGE DE TABLETTE ET MOBILE */
+
+@media only screen and (max-width : 550px){
+
+    .icon-svg-1{
+        width: 7Opx;
+        height: 70px;
+    }
+    
+    .icon-svg-2{
+        width: 7Opx;
+        height: 70px;
+    }
+    
+    .icon-svg-3{
+        width: 7Opx;
+        height: 70px;
+    }
+    
+    .icon-svg-4{
+        width: 7Opx;
+        height: 70px;
+    }
+     
+    .text-avantage{
+        font-size: 18px;
+    }
+}
+
+/* SECTION ABONNEMENT */
+
+.abonnements{
+    background-color: #fafbfc;
+    margin-bottom: 150px;
+}
+
+.title-abonnements > h3{
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: 100px;
+}
+
+.title-abonnements > p{
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.title-abonnements{
+    text-align: center;
+}
+.abonnement-container{
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    margin: auto;
+}
+
+.forfaits{
+    margin: 10px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 5px 5px 45px 5px rgba(0, 0, 0, 0.19);
+    margin-top: 70px;
+    padding: 5px;
+}
+
+.name{
+    color: #b12a7d;
+}
+
+.price{
+    font-size: 40px;
+}
+
+.price-desc{
+    width: 80%;
+    margin: auto;
+}
+
+.green-coche > li{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 0%;
+    margin: auto;
+}
+
+.coche{
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+}
+
+.cta-forfait{
+    background-color: #b12a7d;
+    padding: 20px;
+    border: none;
+    color: white;
+    width: 100%;
+    font-size: 15px;
+}
+
+@media only screen and (max-width : 900px){
+    .abonnement-container{
+        flex-wrap: wrap;
+    }
+}
+
+.forfaits{
+    width: 80%;
+}
+
+/* FORMULAIRE */
+
+.form{
+    background-image:linear-gradient(to bottom, rgba(20,20,24,0.52),rgba(68,58,65,0.73)), url(/63d1acff8ed8dc5692e5a21f_boxed-water-is-better-_XXo6KBedik-unsplash.jpg);
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    color: white;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.text-form{
+    width: 50%;
+    padding: 20px;
+    align-items: center;
+    margin: auto;
+}
+
+.form-container{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    background-color: white;
+    padding: 30px;
+    margin: auto;
+    border-radius: 4px;
+    height: 350px;
+}
+
+label{
+    color: black;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+input{
+    height: 40px;
+    margin-bottom: 10px;
+    border: 1px solid #dfe1e5;
+    padding: 20px;
+}
+
+.cta-form{
+    background-color: #b12a7d;
+    border: none;
+    width: 50%;
+    padding: 20px;
+    color: white;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width : 900px){
+    .form{
+        background-position: center;
+        height: 85vh;
+    }
+
+    .form-container{
+        flex-direction: column;
+        width: 85%;
+    }
+
+    .text-form{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width : 550px){
+
+    form{
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+/* FOOTER ORDINATEUR */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 10px;
+}
+
+footer > ul > li > a {
+    color: black;
+    font-size: 14px;
+}
+
+footer > p{
+    color: black;
+    font-size: 14px;
+}
+
+@media only screen and (max-width : 900px){
+    
+    footer{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    footer > ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+}
